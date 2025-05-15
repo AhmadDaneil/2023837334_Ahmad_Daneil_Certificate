@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <meta charset = "UTF-8">
+  <title>freeCodeCamp Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+ 
+</head>
+<body>
+  <h1 id ="title">freeCodeCamp Survey Form</h1>
+  <p id ="description">Thank you for taking the time to help us improve the platform</p>
+  <form id ="survey-form">
+    <h2>Name</h2>
+    <label id ="name-label" for = "name">Enter your name</label>
+    <input type = "text" id ="name" required placeholder="Enter your name"><br>
+
+    <h2>Email</h2>
+    <label id="email-label" for = "email">Enter your Email</label>
+    <input type = "email" id ="email" required placeholder="Enter your Email"><br>
+
+    <h2>Age (optional)</h2>
+    <label id="number-label" for = "number">Age</label>
+    <input type = "number" id ="number" required placeholder="Age" min = "10" max = "99">
+
+    <h2>What option best describes your current role?</h2>
+    <select id ="dropdown">
+      <option value ="" disabled selected hidden>Select an Option</option>
+      <option value ="Student">Student</option>
+      <option value ="Full Time Job">Full Time Job</option>
+      <option value ="Full Time Learner">Full Time Learner</option>
+      <option value ="Prefer Not To Say">Prefer Not To Say</option>
+      <option value ="Other">Other</option>
+      </select>
+      <h2>Would you recommend freeCodeCamp to a friend?</h2>
+      <label><input id="definitely" type="radio" name="definitely-maybe-not sure" value="definitely" checked>Definitely</label>
+      <label><input id="maybe" type="radio" name="definitely-maybe-not sure" value="maybe"> Maybe</label>
+      <label><input id="not sure" type="radio" name="definitely-maybe-not sure" value="Not sure">Not sure</label>
+      <h2>What is your favorite feature of freeCodeCamp?</h2>
+      <select id ="dropdown">
+      <option value ="" disabled selected hidden>Select an Option</option>
+      <option value ="Challenges">Challenges</option>
+      <option value ="Projects">Projects</option>
+      <option value ="Community">Community</option>
+      <option value ="Open Source">Open Source</option>
+      </select>
+      <h2>What would you like to see improved?</h2>
+      <input type = "checkbox" id = "front end project" name ="Front End Project" value = "Front End Project">
+      <label for="front end project">Front-End Project</label><br>
+      <input type = "checkbox" id = "back end project" name ="Back End Project" value = "Back End Project">
+      <label for="back end project">Back-End Project</label><br>
+      <input type = "checkbox" id = "data visualization" name ="Data Visualization" value = "Data Visualization">
+      <label for="data visualization">Data Visualization</label><br>
+      <input type = "checkbox" id = "challenges" name ="Challenges" value = "Challenges">
+      <label for="challenges">Challenges</label><br>
+      <input type = "checkbox" id = "open source community" name ="Open Source Community" value = "Open Source Community">
+      <label for="open source community"> Open Source Community</label><br>
+      <input type = "checkbox" id = "gitter helps rooms" name ="Gitter Helps Rooms" value = "Gitter Helps Rooms">
+      <label for="gitter helps rooms"> Gitter Helps Rooms</label><br>
+      <input type = "checkbox" id = "videos" name ="Videos" value = "Videos">
+      <label for="videos"> Videos</label><br>
+      <input type = "checkbox" id = "city meetup" name ="City Meetup" value = "City Meetup">
+      <label for="city meetup"> City Meetup</label><br>
+      <input type = "checkbox" id = "wiki" name ="Wiki" value = "Wiki">
+      <label for="wiki"> Wiki</label><br>
+      <input type = "checkbox" id = "forum" name ="Forum" value = "Forum">
+      <label for="forum"> Forum</label><br>
+      <input type = "checkbox" id = "additional courses" name ="Additional Courses" value = "Additional Courses">
+      <label for="additional courses"> Additional Courses</label><br>
+      <h2>Any comments or suggestions?</h2>
+      <textarea id="comment-suggestion" name="comment-suggestion" placholder= "Enter your comment here..." required>
+        </textarea><br>
+
+        <input id="submit" type="submit"value="Submit">
+
+    </form>
+  </body>
+  </html>
