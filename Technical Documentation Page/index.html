@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Technical Documentation - C++</title>
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>C++ Documentation</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Getting_Started">Getting Started</a>
+    <a class="nav-link" href="#Syntax">Syntax</a>
+    <a class="nav-link" href="#Pointers">Pointers</a>
+    <a class="nav-link" href="#Classes_and_Objects">Classes and Objects</a>
+    <a class="nav-link" href="#Memory_Management">Memory Management</a>
+    <a class="nav-link" href="#Templates">Templates</a>
+    <a class="nav-link" href="#Best_Practices">Best Practices</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>This section introduces C++, a high-performance, general-purpose programming language.</p>
+      <p>C++ is widely used for system/software development, game engines, and real-time simulations.</p>
+      <code>#include &lt;iostream&gt;<br>int main() { std::cout &lt;&lt; "Hello, C++!" &lt;&lt; std::endl; return 0; }</code>
+      <ul>
+        <li>Compiled Language</li>
+        <li>Supports OOP and Generic Programming</li>
+        <li>Strong performance and control over system resources</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Getting_Started">
+      <header>Getting Started</header>
+      <p>To get started with C++, install a compiler like GCC or use an IDE such as Visual Studio or Code::Blocks.</p>
+      <p>// Compile with g++<br>g++ main.cpp -o main</p>
+      <ul>
+        <li>Install a C++ compiler</li>
+        <li>Set up an IDE or use command line</li>
+        <li>Write and compile your first program</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Syntax">
+      <header>Syntax</header>
+      <p>C++ syntax is derived from C with additions for object-oriented and generic programming.</p>
+      <p>int add(int a, int b) { return a + b; }</p>
+      <ul>
+        <li>Data types and variables</li>
+        <li>Control structures (if, switch, loops)</li>
+        <li>Functions and prototypes</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Pointers">
+      <header>Pointers</header>
+      <p>Pointers store memory addresses and are essential for dynamic memory and performance-critical code.</p>
+      <code>int x = 10;<br>int* p = &x;<br>std::cout &lt;&lt; *p;</code>
+      <ul>
+        <li>Pointer arithmetic</li>
+        <li>NULL and nullptr</li>
+        <li>Pointer to pointer</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Classes_and_Objects">
+      <header>Classes and Objects</header>
+      <p>Classes encapsulate data and behavior. C++ supports full object-oriented programming.</p>
+      <code>
+class Car {<br>
+&nbsp;&nbsp;public:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;string brand;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;void drive() { std::cout &lt;&lt; "Driving"; }<br>
+};<br>
+Car c;<br>
+c.drive();
+      </code>
+      <ul>
+        <li>Constructors and destructors</li>
+        <li>Inheritance and polymorphism</li>
+        <li>Access modifiers</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Memory_Management">
+      <header>Memory Management</header>
+      <p>C++ allows manual memory control using new and delete, which requires careful handling.</p>
+      <code>
+int* arr = new int[10];<br>
+// use arr<br>
+delete[] arr;
+      </code>
+      <ul>
+        <li>Heap vs Stack</li>
+        <li>Smart pointers (unique_ptr, shared_ptr)</li>
+        <li>Memory leaks and tools to detect them</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Templates">
+      <header>Templates</header>
+      <p>Templates allow functions and classes to operate with generic types.</p>
+      <code>
+template &lt;typename T&gt;<br>
+T max(T a, T b) { return (a &gt; b) ? a : b; }<br>
+std::cout &lt;&lt; max(4, 7);
+      </code>
+      <ul>
+        <li>Function templates</li>
+        <li>Class templates</li>
+        <li>Template specialization</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Best_Practices">
+      <header>Best Practices</header>
+      <p>Following best practices improves code readability and maintainability.</p>
+      <code>// Always initialize variables</code>
+      <ul>
+        <li>Use RAII (Resource Acquisition Is Initialization)</li>
+        <li>Avoid raw pointers when possible</li>
+        <li>Use const and references appropriately</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
