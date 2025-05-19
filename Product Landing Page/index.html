@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Product Landing Page</title>
+    <header id="header">
+      <nav id="nav-bar" required>
+        <img id="header-img" src="images/Sweet-Shop-Logo -with-Chocolate-Bar.png" alt="Sweet Shop">
+        <a class="nav-link" href="#about-us">🍬 About Us</a>
+        <a class="nav-link" href="#product">🍭 Product</a>
+        <a class="nav-link" href="#packages">🍡 Packages</a>
+      </nav>
+  </head>
+
+  <body>
+    <main>
+      <section class="main-section" id="about-us">
+        <br>
+        <header style="font-weight:bold;">About Us</header>
+        <p>This website is for selling candies and chocolate. We need your email so, you can make a payment.</p>
+      </section>
+      <h2>Ads video</h2>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/JmnUtCm-R8U?si=KlO6mAuU0U74StO8" title="Cadbury Dairy Milk Marvelous Creations" frameborder=0 allowfullscreen></iframe>
+
+        <section class="main-section" id="product"></section>
+        <h2>Product</h2>
+        <p>Here is the list of product that we sold:</p>
+        <ol>
+          <li>Cadburry Dairy Milk Marvelous Creations</li>
+          <li>Kit-Kat</li>
+          <li>Godiva Dark Chocolate Pearls</li>
+          <li>Godiva Milk Chocolate Pearls</li>
+          <li>Beryl's Twin Tower Almond Milk Chocolate (150g)</li>
+          <li>Beryl's Almond Milk Chocolate Bar (160g)</li>
+          <li>Beryl's Almond Dark Chocolate Bar (160g)</li>
+        </ol>
+
+        <h2>Packages</h2>
+        <section id="packages" style="display: flex; gap: 20px; justify-content: center;">
+          <div class="price-box">
+            <h3>Basic</h3>
+            <p>RM 15</p>
+            <p>Including:
+              -Cadburry Dairy Milk Marvelous Creations
+              -Beryl's Twin Tower Almond Milk Chocolate (150g)
+            </p>
+          </div>
+          <div class="price-box">
+            <h3>Medium</h3>
+            <p>RM 35</p>
+            <p>Including:
+              -Cadburry Dairy Milk Marvelous Creations
+              -Beryl's Chocolate (Choose 1)
+              -Kit-Kat
+            </p>
+          </div>
+          <div class="price-box">
+            <h3>Big Pack</h3>
+            <p>RM 85</p>
+            <p>Including:
+              -Cadburry Dairy Milk Marvelous Creations X 2
+              -Beryl's Chocolate (Choose 2)
+              -Godiva Chocolate (Choose 1)
+              -Kit-Kat X 2
+            </p>
+          </div>
+        </section>
+        <h2>Order Now</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" name="email" type="email" required placeholder="Enter your Email">
+        <input id="submit" type="submit" value="Subscribe" required>
+      </form>
+    </header>
+    </main>
+  </body>
